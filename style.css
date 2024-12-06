@@ -1,0 +1,92 @@
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #ffcad4;
+  font-family: Parkinsans;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  opacity: 0;
+  height: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ee85b5;
+
+  border-radius: 10px;
+}
+
+#heart {
+  width: 100px;
+  position: absolute;
+  top: -10px;
+  animation: heartDrop 2000ms ease;
+  opacity: 0;
+}
+
+#center-text {
+  text-align: center;
+  top: 50%;
+}
+
+#heart-btn {
+  font-family: Parkinsans;
+  width: 100px;
+  height: 30px;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f7af9d;
+}
+
+#container-main {
+  margin-top: 40px;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: 15% 10% 15% 10% 15% 10% 15% 10%;
+  width: 95vw;
+  height: 900px;
+  object-fit: cover;
+}
+
+.text-section {
+  text-align: center;
+}
+
+@keyframes heartDrop {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  75% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.1;
+    transform: translateY(1000px);
+  }
+}
+
+.image {
+  width: 200px;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+video {
+  width: 250px;
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
